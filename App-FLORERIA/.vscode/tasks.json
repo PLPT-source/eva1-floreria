@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Setup completo (venv + BD + migraciones)", "type": "shell", "command": "setup.bat", "problemMatcher": [] },
+    { "label": "Crear base de datos", "type": "shell", "command": "crear_bd.bat", "problemMatcher": [] },
+    { "label": "Migrar", "type": "shell", "command": "venv\\Scripts\\python manage.py makemigrations && venv\\Scripts\\python manage.py migrate", "problemMatcher": [] },
+    { "label": "Servidor Django", "type": "shell", "command": "venv\\Scripts\\python manage.py runserver", "isBackground": true, "problemMatcher": [] },
+    { "label": "Ver productos en BD (SELECT)", "type": "shell", "command": "crud.bat", "problemMatcher": [] },
+    { "label": "Tests", "type": "shell", "command": "venv\\Scripts\\python manage.py test", "problemMatcher": [] }
+  ]
+}

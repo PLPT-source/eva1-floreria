@@ -1,0 +1,10 @@
+{% extends 'floreriaapp/base.html' %}
+{% block titulo %}Inicio · Florería{% endblock %}
+{% block contenido %}
+<div class="p-5 mb-4 bg-white rounded-3 shadow-sm text-center">
+    <h1 class="display-5">Rincon floral</h1>
+    <p class="lead">Gestión de productos</p>
+    <a href="{% url 'listar_productos' %}" class="btn btn-flor btn-lg">Ver productos</a>
+    <a href="{% url 'crear_producto' %}" class="btn btn-outline-secondary btn-lg">Nuevo producto</a>
+</div>
+{% endblock %}
